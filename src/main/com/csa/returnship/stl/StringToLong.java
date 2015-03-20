@@ -9,10 +9,16 @@ import java.util.regex.Pattern;
  * represented in octal, hex, binary, or any other radix than decimal.
  */
 public class StringToLong {
-    public static long convertStringToLong(String s) {
+
+    String PATTERN = "(-?)(\\d+)[lL]?";
+    Pattern r;
+
+    public StringToLong() {
+        r = Pattern.compile(PATTERN);
+    }
+
+    public long convertStringToLong(String s) {
         long num = 0;
-        String pattern = "(-?)(\\d+)[lL]?";
-        Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(s);
         if (m.matches()) {
             String digitString = m.group(2);
