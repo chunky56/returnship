@@ -1,5 +1,7 @@
-import org.junit.Test;
+package com.csa.returnship.itst;
 
+import com.csa.returnship.itst.IntTrinarySearchTree;
+import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class IntTrinarySearchTreeTest {

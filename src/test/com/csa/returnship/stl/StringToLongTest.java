@@ -1,3 +1,7 @@
+package com.csa.returnship.stl;
+
+import com.csa.returnship.stl.StringToLong;
+
 import static org.junit.Assert.*;
 
 public class StringToLongTest {
