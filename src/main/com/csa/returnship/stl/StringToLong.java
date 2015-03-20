@@ -14,7 +14,7 @@ public class StringToLong {
         String pattern = "(-?)(\\d+)[lL]?";
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(s);
-        if (m.find()) {
+        if (m.matches()) {
             String digitString = m.group(2);
             for (int i = 0; i < digitString.length(); i++) {
                 int digit = Character.getNumericValue(digitString.charAt(i));
